@@ -1,0 +1,56 @@
+header {
+  background-color: transparent;
+  padding: 15px 20px;
+}
+
+header .header-inner {
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-inner-logo {
+  width: 120px;
+}
+
+header .header_menu-btn {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 24px;
+  width: 23px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 90;
+  position: relative;
+}
+
+header .header_menu-btn span,
+header .header_menu-btn span::before,
+header .header_menu-btn span::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+header .header_menu-btn span::before {
+  bottom: 6px;
+}
+
+header .header_menu-btn span::after {
+  top: 6px;
+}
+/*# sourceMappingURL=sp_header.css.map */

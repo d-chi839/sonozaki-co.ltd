@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+$cWhite: #fff;
+$cBlack: #000;
+
+@import 'breakpoints/base';
+
+.pc {
+    display: none !important;
+}
+
+@media screen and (min-width: 600px) {
+    @import 'breakpoints/_600up';
+    .sp {
+        display: none !important;
+    }   
+    .tb {
+        display: block !important;
+    } 
+        
+}
+
+@media screen and (min-width: 961px) {
+    @import 'breakpoints/_960up';
+
+    .sp {
+        display: none !important;
+    }    
+    .pc {
+        display: block !important;
+    }
+
+}

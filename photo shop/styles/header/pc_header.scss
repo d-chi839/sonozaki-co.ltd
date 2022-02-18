@@ -1,0 +1,44 @@
+ @charset "utf-8";
+
+ header {
+     padding: 30px 40px;
+     height: 100px;
+    & img {
+        width: 160px;
+    }
+    & .header-inner {
+        display: flex;
+        justify-content: start;
+        & .pc-menu {
+            display: flex !important;
+            align-items: center;
+            margin-left: 30px;
+            &_item {
+                position: relative;
+                list-style: none;
+                font-size: 16px;
+                text-align: center;
+                line-height: 1;
+                padding: 0 15px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 40px;
+                    width: 1px;
+                    top: -5px;
+                    right: 0;
+                    border-style: none;
+                    border-left: 1px solid #fff;
+                    transform: rotate(30deg);
+                }
+                   & a {
+                       text-decoration: none;
+                       color: #fff;
+                   & span {
+                       font-size: 10px;
+                   }                 
+                }
+            }
+        }
+    }
+}

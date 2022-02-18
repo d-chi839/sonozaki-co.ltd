@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+@import '../header/sp_header.scss';
+
+.container {
+    margin: 0 10%;
+}
+
+header {
+    & label.header_menu-btn {
+        padding-top: 15px;
+    }
+}
+main {
+    .sec01 {
+        & img.tb {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    .sec02 {
+        & img.tb {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    .sec04 {
+        &_img {
+            margin: 20px 10% 0;
+        }
+    }
+
+}
